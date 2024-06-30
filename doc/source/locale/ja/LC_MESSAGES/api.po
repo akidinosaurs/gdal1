@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/api/cpl.rst:10
 msgid "Common Portability Library C API"
-msgstr ""
+msgstr "共通移植ライブラリ C API"
 
 #: ../../source/api/cpl.rst:13
 msgid "cpl_conv.h"

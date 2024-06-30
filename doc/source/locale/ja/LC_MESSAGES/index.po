@@ -71,6 +71,11 @@ msgid ""
 "also includes that .PDF.) The documentation reflects the latest state of "
 "the development branch of the software."
 msgstr ""
+"この文書は`PDF file <gdal.pdf>`_, と 個別HTMLページをオフライン閲覧用に圧縮した`a "
+".ZIP  <https://github.com/OSGeo/gdal-"
+"docs/archive/refs/heads/master.zip>`_ ファイルとしても提供しています. ( .ZIP "
+"には .PDF. も含まれます) この文書はソフトウエアの最新の開発ブランチの状態を反映しています。"
+
 
 #: ../../source/index.rst:30
 msgid "Index"

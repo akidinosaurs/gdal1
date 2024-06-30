@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/programs/index.rst:23 ../../source/programs/index.rst:122
 msgid "Common options"
-msgstr ""
+msgstr "共通オプション"
 
 #: ../../source/programs/index.rst:5
 msgid "Programs"
-msgstr ""
+msgstr "プログラム"
 
 #: ../../source/programs/index.rst:8
 msgid "General"
-msgstr ""
+msgstr "一般情報"
 
 #: ../../source/programs/index.rst:18
 msgid ":ref:`argument_syntax`"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../source/programs/index.rst:21
 msgid "Raster programs"
-msgstr ""
+msgstr "ラスタープログラム"
 
 #: ../../source/programs/index.rst:67
 msgid ":ref:`Common options <raster_common_options>`"
@@ -199,7 +199,7 @@ msgstr ""
 
 #: ../../source/programs/index.rst:105
 msgid "Multidimensional Raster programs"
-msgstr ""
+msgstr "多次元ラスタープログラム"
 
 #: ../../source/programs/index.rst:116
 msgid ""
@@ -215,7 +215,7 @@ msgstr ""
 
 #: ../../source/programs/index.rst:120
 msgid "Vector programs"
-msgstr ""
+msgstr "ベクタープログラム"
 
 #: ../../source/programs/index.rst:136
 msgid ":ref:`Common options <vector_common_options>`"

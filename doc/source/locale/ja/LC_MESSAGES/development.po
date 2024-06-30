@@ -26,7 +26,7 @@ msgstr "GDAL のソースからのビルド"
 #: ../../source/development/building_from_source.rst:10
 #: ../../source/development/dev_environment.rst:8
 msgid "Build requirements"
-msgstr ""
+msgstr "ビルド要件"
 
 #: ../../source/development/building_from_source.rst:12
 msgid "The minimum requirements to build GDAL are:"

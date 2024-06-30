@@ -29,7 +29,7 @@ msgstr "ユーザーがGDALに貢献する方法は複数あります:"
 
 #: ../../source/contributing/index.rst:9
 msgid ":ref:`contributing code<development>` (bug fixes or enhancements)"
-msgstr ""
+msgstr ":ref:`contributing code<development>` (バグ修正または機能追加)"
 
 #: ../../source/contributing/index.rst:10
 msgid "filing high-quality `bug reports <https://github.com/osgeo/gdal/issues>`_"

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/user/configoptions.rst:5
 msgid "Configuration options"
-msgstr ""
+msgstr "構成オプション"
 
 #: ../../source/user/configoptions.rst:7
 msgid ""

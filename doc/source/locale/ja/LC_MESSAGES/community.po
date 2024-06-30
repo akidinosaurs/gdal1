@@ -21,8 +21,8 @@ msgstr ""
 
 #: ../../source/community/code_of_conduct.rst:5
 #: ../../source/community/index.rst:16
-msgid "行動規範"
-msgstr ""
+msgid "Code of Conduct"
+msgstr "行動規範"
 
 #: ../../source/community/code_of_conduct.rst:7
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../source/community/code_of_conduct.rst:13
 msgid "Introduction"
-msgstr ""
+msgstr "紹介"
 
 #: ../../source/community/code_of_conduct.rst:15
 msgid ""

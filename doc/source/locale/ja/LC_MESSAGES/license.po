@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/license.rst:5 ../../source/license.rst:8
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 #: ../../source/license.rst:10
 msgid ""

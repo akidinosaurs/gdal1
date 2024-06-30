@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/tutorials/gdal_grid_tut.rst:5
 msgid "GDAL Grid Tutorial"
-msgstr ""
+msgstr "GDAL Grid チュートリアル"
 
 #: ../../source/tutorials/gdal_grid_tut.rst:8
 msgid "Introduction to Gridding"
-msgstr ""
+msgstr "グリッディングの紹介"
 
 #: ../../source/tutorials/gdal_grid_tut.rst:10
 msgid ""

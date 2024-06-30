@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/sponsors/faq.rst:5
 msgid "Sponsoring FAQ"
-msgstr ""
+msgstr "スポンサー FAQ"
 
 #: ../../source/sponsors/faq.rst:8
 msgid "Why does GDAL need sponsorship?"
-msgstr ""
+msgstr "GDAL がスポンサーを必要とする理由は何ですか？"
 
 #: ../../source/sponsors/faq.rst:10
 msgid ""

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/about.rst:5
 msgid "What is GDAL?"
-msgstr ""
+msgstr "GDALとは?"
 
 #: ../../source/about_no_title.rst:1
 msgid ""

@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/software_using_gdal.rst:5
 msgid "Software using GDAL"
-msgstr ""
+msgstr "GDALを利用しているソフトウェア"
 
 #: ../../source/software_using_gdal.rst:8
 msgid "Free and open source"
-msgstr ""
+msgstr "フリーアンドオープンソース"
 
 #: ../../source/software_using_gdal.rst:10
 msgid ""

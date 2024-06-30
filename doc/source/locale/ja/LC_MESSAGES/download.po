@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-01 03:46+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Yoichi Kayama <yoichi.kayama@gmail.com>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/download.rst:5
+msgid "Download"
+msgstr "ダウンロード"
+
+#: ../../source/download.rst:10
+msgid "Contents"
+msgstr "目次"
+
+#: ../../source/download.rst:13
+msgid ""
+"The GDAL project distributes GDAL as source code and :ref:`Containers` "
+"only. :ref:`Binaries` produced by others are available for a variety of "
+"platforms and package managers."
+msgstr ""
+
+#: ../../source/download.rst:16
+msgid "Source Code"
+msgstr "ソースコード"
+
+#: ../../source/download.rst:19
+msgid "Current Release"
+msgstr "カレントリリース"
+
+#: ../../source/download.rst:21
+msgid "**2024-06-26** `gdal-3.9.1.tar.gz`_ `3.9.1 Release Notes`_ (`3.9.1 md5`_)"
+msgstr ""
+
+#: ../../source/download.rst:28
+msgid "Past Releases"
+msgstr ""
+
+#: ../../source/download.rst:30
+msgid "Links to :ref:`download_past` are also available."
+msgstr ""
+
+#: ../../source/download.rst:35
+msgid "Development Source"
+msgstr ""
+
+#: ../../source/download.rst:37
+msgid ""
+"The main repository for GDAL is located on GitHub at "
+"https://github.com/OSGeo/GDAL."
+msgstr ""
+
+#: ../../source/download.rst:40
+msgid ""
+"You can obtain a copy of the active source code by issuing the following "
+"command"
+msgstr ""
+
+#: ../../source/download.rst:48
+msgid ""
+"Additional information is available about :ref:`build_requirements` and "
+":ref:`building_from_source`."
+msgstr ""
+
+#: ../../source/download.rst:54
+msgid "Binaries"
+msgstr ""
+
+#: ../../source/download.rst:56
+msgid ""
+"In this section we list a number of the binary distributions of GDAL all "
+"of which should have fully reproducible open source build recipes."
+msgstr ""
+
+#: ../../source/download.rst:59
+msgid ""
+"Note that the maintainers of those distributions are generally not the "
+"maintainers of the GDAL sources, so please report any issue specific to "
+"those builds through their own support channels."
+msgstr ""
+
+#: ../../source/download.rst:64
+msgid "Windows"
+msgstr ""
+
+#: ../../source/download.rst:66
+msgid ""
+"Windows builds are available via `Conda Forge`_ (64-bit only). See the "
+":ref:`conda` section for more detailed information. GDAL is also "
+"distributed by `GISInternals`_ and `OSGeo4W`_ and through the `NuGet`_ "
+"and :ref:`vcpkg` package managers."
+msgstr ""
+
+#: ../../source/download.rst:76
+msgid "Linux"
+msgstr ""
+
+#: ../../source/download.rst:78
+msgid ""
+"Packages are available for `Debian`_, `Alpine_`, `Fedora_`, and other "
+"distributions."
+msgstr ""
+
+#: ../../source/download.rst:86
+msgid "Mac OS"
+msgstr ""
+
+#: ../../source/download.rst:88
+msgid "GDAL packages are available on `Homebrew`_."
+msgstr ""
+
+#: ../../source/download.rst:94
+msgid "Cross-Platform Package Managers"
+msgstr ""
+
+#: ../../source/download.rst:99
+msgid "Conda"
+msgstr ""
+
+#: ../../source/download.rst:101
+msgid ""
+"`Conda <https://anaconda.org>`__ can be used on multiple platforms "
+"(Windows, macOS, and Linux) to install software packages and manage "
+"environments. Conda packages for GDAL are available through `conda-forge "
+"<https://anaconda.org/conda-forge/gdal>`__."
+msgstr ""
+
+#: ../../source/download.rst:107
+msgid "Latest version: |Conda badge|"
+msgstr ""
+
+#: ../../source/download.rst
+msgid "Conda badge"
+msgstr ""
+
+#: ../../source/download.rst:122
+msgid "To install the Arrow and Parquet drivers as plugins:"
+msgstr ""
+
+#: ../../source/download.rst:130
+msgid "GDAL master Conda builds"
+msgstr ""
+
+#: ../../source/download.rst:132
+msgid ""
+"GDAL master builds are available in the `gdal-master "
+"<https://anaconda.org/gdal-master/gdal>`__ channel. They are based on "
+"dependencies from the ``conda-forge`` channel."
+msgstr ""
+
+#: ../../source/download.rst:135
+msgid ""
+"First, install mamba into the ``base`` environment, create a dedicated "
+"``gdal_master_env`` environment, and then activate the dedicated "
+"``gdal_master_env`` environment."
+msgstr ""
+
+#: ../../source/download.rst:145
+msgid "Then install GDAL from the ``gdal-master`` channel:"
+msgstr ""
+
+#: ../../source/download.rst:156
+msgid "vcpkg"
+msgstr ""
+
+#: ../../source/download.rst:158
+msgid ""
+"The GDAL port in the `vcpkg <https://github.com/Microsoft/vcpkg>`__ "
+"dependency manager is kept up to date by Microsoft team members and "
+"community contributors. You can download and install GDAL using the vcpkg"
+" as follows:"
+msgstr ""
+
+#: ../../source/download.rst:169
+msgid ""
+"If the version is out of date, please `create an issue or pull request "
+"<https://github.com/Microsoft/vcpkg>`__ on the vcpkg repository."
+msgstr ""
+
+#: ../../source/download.rst:172
+msgid "Spack"
+msgstr ""
+
+#: ../../source/download.rst:174
+msgid ""
+"Spack is a package management tool designed to support multiple versions "
+"and configurations of software on a wide variety of platforms and "
+"environments. It was designed for large supercomputing centers. Spack "
+"builds packages from sources, and allows tweaking their configurations."
+msgstr ""
+
+#: ../../source/download.rst:179
+msgid ""
+"You can find information about GDAL in Spack at "
+"https://packages.spack.io/package.html?name=gdal"
+msgstr ""
+
+#: ../../source/download.rst:182
+msgid "For the default GDAL build with a reduced number of drivers:"
+msgstr ""
+
+#: ../../source/download.rst:190
+msgid "For a build with netcdf driver enabled:"
+msgstr ""
+
+#: ../../source/download.rst:200
+msgid "Containers"
+msgstr ""
+
+#: ../../source/download.rst:202
+msgid ""
+"Docker images with nightly builds of GDAL master and tagged releases are "
+"available at `GitHub Container registry "
+"<https://github.com/OSGeo/gdal/pkgs/container/gdal>`_."
+msgstr ""
+
+#: ../../source/download.rst:205
+msgid ""
+"Information on the content of the different configurations can be found "
+"at `https://github.com/OSGeo/gdal/tree/master/docker "
+"<https://github.com/OSGeo/gdal/tree/master/docker>`_."
+msgstr ""
+
+#: ../../source/download.rst:210
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/download.rst:212
+msgid ""
+"Besides being included when downloading the software, the documentation "
+"is also available independently as a `PDF file "
+"<https://gdal.org/gdal.pdf>`_, and `a ZIP of individual HTML pages "
+"<https://github.com/OSGeo/gdal-docs/archive/refs/heads/master.zip>`_ for "
+"offline browsing. (The ZIP also includes the PDF.) The documentation "
+"reflects the latest state of the development branch of the software."
+msgstr ""
+

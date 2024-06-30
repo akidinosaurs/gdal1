@@ -89,6 +89,14 @@ exclude_patterns = [
 # Cf https://stackoverflow.com/questions/15258831/how-to-handle-two-dashes-in-rest
 smartquotes = False
 
+
+
+gettext_compact =  True
+
+locale_dirs = ['locale/']
+
+language = 'en'
+
 # Read the file of substitutions and append it to the beginning of each file.
 # This avoids the need to add an explicit ..include directive to every file.
 rst_prolog = open(os.path.join(os.path.dirname(__file__), "substitutions.rst")).read()

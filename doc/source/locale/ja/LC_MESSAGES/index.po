@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/index.rst:12
 msgid "User"
-msgstr ""
+msgstr "ユーザー"
 
 #: ../../source/index.rst:3
 msgid "GDAL"
-msgstr ""
+msgstr "GDAL"
 
 #: ../../source/about_no_title.rst:1
 msgid ""

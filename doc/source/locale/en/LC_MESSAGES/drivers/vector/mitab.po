@@ -1,0 +1,620 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-01 04:49+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/vector/mitab.rst:4
+msgid "MapInfo TAB and MIF/MID"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:6
+msgid "MapInfo File"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:10
+msgid ""
+"MapInfo datasets in native (TAB) format and in interchange (MIF/MID) "
+"format are supported for reading and writing. Update of existing TAB "
+"files is supported (append of new features, modifications and deletions "
+"of existing features, adding/renaming/deleting fields, ...). Update of "
+"existing MIF/MID files is not supported."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:17
+msgid ""
+"Note: In the rest of this document \"MIF/MID File\" is used to refer to a"
+" pair of .MIF + .MID files, and \"TAB file\" refers to the set of files "
+"for a MapInfo table in binary form (usually with extensions .TAB, .DAT, "
+".MAP, .ID, .IND)."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:22
+msgid ""
+"The MapInfo driver treats a whole directory of files as a dataset, and a "
+"single file within that directory as a layer. In this case the directory "
+"name should be used as the dataset name."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:26
+msgid ""
+"However, it is also possible to use one of the files (.tab or .mif) in a "
+"MapInfo set as the dataset name, and then it will be treated as a dataset"
+" with one single layer."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:30
+msgid ""
+"MapInfo coordinate system information is supported for reading and "
+"writing."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:34
+msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:43
+msgid "Creation Issues"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:45
+msgid ""
+"The TAB File format requires that the bounds (geographical extents) of a "
+"new file be set before writing the first feature."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:48
+msgid ""
+"There is currently no automated setting of valid default bounds for each "
+"spatial reference system, so for the time being, the MapInfo driver sets "
+"the following default bounds when a new layer is created:"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:52
+msgid ""
+"For a file in LAT/LON (geographic) coordinates: BOUNDS (-180, -90) (180, "
+"90)"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:54
+msgid ""
+"For any other projection: BOUNDS (-30000000 + false_easting, -15000000 + "
+"false_northing) (30000000 + false_easting, 15000000 + false_northing)"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:58
+msgid "It is possible to override those bounds through two mechanisms."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:60
+msgid ""
+"specify a user-defined file that contain projection definitions with "
+"bounds. The name of this file must be specified with the "
+":config:`MITAB_BOUNDS_FILE` configuration option. This allows users to "
+"override the default bounds for existing projections, and to define "
+"bounds for new projections not listed in the hard-coded table in the "
+"driver. The format of the file is a simple text file with one CoordSys "
+"string per line. The CoordSys lines should follow the MIF specs, and MUST"
+" include the optional Bounds definition at the end of the line, e.g."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:74
+msgid ""
+"It is also possible to establish a mapping between a source CoordSys and "
+"a target CoordSys with bounds. Such a mapping is specified by adding a "
+"line starting with \"Source = \" followed by a CoordSys (spaces before or"
+" after the equal sign do not matter). The following line should start "
+"with \"Destination = \" followed by a CoordSys with bounds, e.g."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:87
+msgid "use the :lco:`BOUNDS` layer creation option (see below)"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:89
+msgid ""
+"If no coordinate system is provided when creating a layer, the projection"
+" case is used, not geographic, which can result in very low precision if "
+"the coordinates really are geographic. You can add \"-a_srs WGS84\" to "
+"the **ogr2ogr** commandline during a translation to force geographic "
+"mode."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:95
+msgid "MapInfo feature attributes suffer a number of limitations:"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:97
+msgid ""
+"Only Integer, Real and String field types can be created. The various "
+"list, and binary field types cannot be created."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:99
+msgid ""
+"For String fields, the field width is used to establish storage size in "
+"the .dat file. This means that strings longer than the field width will "
+"be truncated"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:102
+msgid "String fields without an assigned width are treated as 254 characters."
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:106
+msgid "Dataset Creation Options"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:108
+msgid ""
+"|about-dataset-creation-options| The following dataset creation options "
+"are supported:"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:143
+msgid "Layer Creation Options"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:145
+msgid ""
+"|about-layer-creation-options| The following layer creation options are "
+"supported:"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:164
+msgid "Currently supported values for the encoding name are:"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:166
+msgid "MapInfo encodings"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ENCODING value"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "MapInfo charset"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "description"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "\"\" (empty string)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "Neutral"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "No character conversions performed."
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "UTF-8"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "UTF-8 (Works with recent MapInfo versions, since v15.2)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-1"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_1"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-1 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-2"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_2"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-2 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-3"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_3"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-3 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-4"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_4"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-4 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-5"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_5"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-5 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-6"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_6"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-6 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-7"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_7"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-7 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-8"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_8"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-8 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO-8859-9"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO8859_9"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "ISO 8859-9 (UNIX)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "EUC-JP"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "PackedEUCJapaese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "UNIX, standard Japanese implementation."
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1252"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsLatin1"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1250"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsLatin2"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1256"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsArabic"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1251"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsCyrillic"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1257"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsBalticRim"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1253"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsGreek"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1255"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsHebrew"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP1254"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsTurkish"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "Windows Eastern Europe"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP950"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsTradChinese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "Windows Traditional Chinese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP936"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsSimpChinese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "Windows Simplified Chinese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP932"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsJapanese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP949"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "WindowsKorean"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP437"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage437"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 437 = IBM Extended ASCII"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP850"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage850"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 850 = Multilingual"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP852"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage852"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 852 = Eastern Europe"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP855"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage855"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 855 = Cyrillic"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP857"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage857"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP860"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage860"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 860 = Portuguese"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP861"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage861"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 861 = Icelandic"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP863"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage863"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 863 = French Canadian"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP864"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage864"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 864 = Arabic"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP865"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage865"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 865 = Nordic"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CP869"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "CodePage869"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "DOS Code Page 869 = Modern Greek"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "(no iconv match)"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "LICS"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "Lotus worksheet release 1,2 character set"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "LMBCS"
+msgstr ""
+
+#: ../../source/drivers/vector/mapinfo_encodings.csv:1
+msgid "Lotus worksheet release 3,4 character set"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:186
+msgid "Configuration options"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:188
+msgid "|about-config-options| The following configuration options are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:204
+msgid "See Also"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:206
+msgid "`MITAB Page <http://mitab.maptools.org/>`__"
+msgstr ""
+
+#: ../../source/drivers/vector/mitab.rst:207
+msgid ""
+"`About friendly layer names "
+"<https://support.pitneybowes.com/SearchArticles/VFP05_KnowledgeWithSidebarHowTo?id=kA180000000CtuHCAS&popup=false&lang=en_US>`__"
+msgstr ""
+

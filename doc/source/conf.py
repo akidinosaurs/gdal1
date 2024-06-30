@@ -91,7 +91,7 @@ smartquotes = False
 
 
 
-gettext_compact =  True
+gettext_compact =  False
 
 locale_dirs = ['locale/']
 

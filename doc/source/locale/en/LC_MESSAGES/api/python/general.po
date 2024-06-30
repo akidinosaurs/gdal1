@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-01 04:49+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/general.rst:9
+msgid "Python General API"
+msgstr ""
+
+#: ../../source/api/python/general.rst:12
+msgid "Configuration Management"
+msgstr ""
+
+#: ../../source/api/python/general.rst:58
+msgid "Error Handling"
+msgstr ""
+
+#: of osgeo.gdal.ConfigurePythonLogging:1
+msgid "Configure GDAL to use Python's logging framework"
+msgstr ""
+
+#: ../../source/api/python/general.rst:96
+msgid "File Management"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry:1
+msgid "Proxy of C++ DirEntry class."
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.extra:1
+msgid "p.p.char"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.extra osgeo.gdal.DirEntry.mode
+#: osgeo.gdal.DirEntry.modeKnown osgeo.gdal.DirEntry.mtime
+#: osgeo.gdal.DirEntry.mtimeKnown osgeo.gdal.DirEntry.name
+#: osgeo.gdal.DirEntry.size osgeo.gdal.DirEntry.sizeKnown
+msgid "type"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.extra:3
+msgid "extra"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mode:1
+msgid "int"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mode:3
+msgid "mode"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.modeKnown:1 osgeo.gdal.DirEntry.mtimeKnown:1
+#: osgeo.gdal.DirEntry.sizeKnown:1
+msgid "bool"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.modeKnown:3
+msgid "modeKnown"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mtime:1 osgeo.gdal.DirEntry.size:1
+msgid "GIntBig"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mtime:3
+msgid "mtime"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mtimeKnown:3
+msgid "mtimeKnown"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.name:1
+msgid "p.char"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.name:3
+msgid "name"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.size:3
+msgid "size"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.sizeKnown:3
+msgid "sizeKnown"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.thisown:1
+msgid "The membership flag"
+msgstr ""
+

@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-01 04:49+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/osgeo.gdal.rst:7
+msgid "osgeo.gdal module"
+msgstr ""
+
+#: of osgeo.gdal.AsyncReader:1 osgeo.gdal.EDTComponent:1
+#: osgeo.gdal.GDALTransformerInfoShadow:1 osgeo.gdal.MajorObject:1
+#: osgeo.gdal.StatBuf:1 osgeo.gdal.Statistics:1 osgeo.gdal.VSILFILE:1
+#: osgeo.gdal.VirtualMem:1
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: of osgeo.gdal.AsyncReader:1
+msgid "Proxy of C++ GDALAsyncReaderShadow class."
+msgstr ""
+
+#: of osgeo.gdal.EDTComponent:1
+msgid "Proxy of C++ GDALEDTComponentHS class."
+msgstr ""
+
+#: of osgeo.gdal.GDALTransformerInfoShadow:1
+msgid "Proxy of C++ GDALTransformerInfoShadow class."
+msgstr ""
+
+#: of osgeo.gdal.MajorObject:1
+msgid "Proxy of C++ GDALMajorObjectShadow class."
+msgstr ""
+
+#: of osgeo.gdal.StatBuf:1
+msgid "Proxy of C++ StatBuf class."
+msgstr ""
+
+#: of osgeo.gdal.StatBuf.mode:1
+msgid "int"
+msgstr ""
+
+#: of osgeo.gdal.StatBuf.mode osgeo.gdal.StatBuf.mtime osgeo.gdal.StatBuf.size
+#: osgeo.gdal.Statistics.max osgeo.gdal.Statistics.mean
+#: osgeo.gdal.Statistics.min osgeo.gdal.Statistics.std_dev
+#: osgeo.gdal.Statistics.valid_count
+msgid "type"
+msgstr ""
+
+#: of osgeo.gdal.StatBuf.mode:3
+msgid "mode"
+msgstr ""
+
+#: of osgeo.gdal.StatBuf.mtime:1 osgeo.gdal.StatBuf.size:1
+#: osgeo.gdal.Statistics.valid_count:1
+msgid "GIntBig"
+msgstr ""
+
+#: of osgeo.gdal.StatBuf.mtime:3
+msgid "mtime"
+msgstr ""
+
+#: of osgeo.gdal.StatBuf.size:3
+msgid "size"
+msgstr ""
+
+#: of osgeo.gdal.Statistics:1
+msgid "Proxy of C++ Statistics class."
+msgstr ""
+
+#: of osgeo.gdal.Statistics.max:1 osgeo.gdal.Statistics.mean:1
+#: osgeo.gdal.Statistics.min:1 osgeo.gdal.Statistics.std_dev:1
+msgid "double"
+msgstr ""
+
+#: of osgeo.gdal.Statistics.max:3
+msgid "max"
+msgstr ""
+
+#: of osgeo.gdal.Statistics.mean:3
+msgid "mean"
+msgstr ""
+
+#: of osgeo.gdal.Statistics.min:3
+msgid "min"
+msgstr ""
+
+#: of osgeo.gdal.Statistics.std_dev:3
+msgid "std_dev"
+msgstr ""
+
+#: of osgeo.gdal.Statistics.valid_count:3
+msgid "valid_count"
+msgstr ""
+
+#: of osgeo.gdal.VSILFILE:1
+msgid "Proxy of C++ VSILFILE class."
+msgstr ""
+
+#: of osgeo.gdal.VirtualMem:1
+msgid "Proxy of C++ CPLVirtualMemShadow class."
+msgstr ""
+
+#: of osgeo.gdal.listdir:1
+msgid "Iterate over a directory."
+msgstr ""
+
+#: of osgeo.gdal.listdir:3
+msgid "recursionLevel = -1 means unlimited level of recursion."
+msgstr ""
+

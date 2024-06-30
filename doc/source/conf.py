@@ -73,6 +73,12 @@ extensions = [
     "sphinxcontrib.jquery",
 ]
 
+gettext_compact =  True
+
+locale_dirs = ['locale/']
+
+language = 'ja'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 

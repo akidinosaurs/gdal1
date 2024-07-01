@@ -25,21 +25,23 @@ msgstr ""
 
 #: ../../source/faq.rst:12
 msgid "Contents"
-msgstr ""
+msgstr "目次"
 
 #: ../../source/faq.rst:16
 msgid "What does GDAL stand for?"
-msgstr ""
+msgstr "GDALとは何の略ですか？"
 
 #: ../../source/faq.rst:18
 msgid "GDAL - Geospatial Data Abstraction Library"
-msgstr ""
+msgstr "GDAL - 空間データ抽象ライブラリ(Geospatial Data Abstraction Library)"
 
 #: ../../source/faq.rst:20
 msgid ""
 "It is sometimes pronounced \"goo-doll\" (a bit like goo-gle), while "
 "others pronounce it \"gee-doll,\" and others pronounce it \"gee-dall.\""
 msgstr ""
+"これは時々 \"goo-doll\" (少し goo-gleに似てます), と発音されます, また 他の人場合 \"gee-doll,\" や "
+"\"gee-dall.\" と発音されることがあります"
 
 #: ../../source/faq.rst:22
 msgid ""
@@ -47,10 +49,13 @@ msgid ""
 "gdal#t=00:02:58>`__ how Frank Warmerdam prounounces it and the history "
 "behind the acronym."
 msgstr ""
+"`これを <https://soundcloud.com/danabauer/how-do-you-pronounce-"
+"gdal#t=00:02:58>`__ 聞いて下さい。 Frank Warmerdam がこれをどう発音したかと "
+"GDALの頭字語の歴史について聞くことができます."
 
 #: ../../source/faq.rst:25
 msgid "What is this OGR stuff?"
-msgstr ""
+msgstr "OGRとは何ですか？"
 
 #: ../../source/faq.rst:27
 msgid ""
@@ -61,7 +66,7 @@ msgstr ""
 
 #: ../../source/faq.rst:30
 msgid "What does OGR stand for?"
-msgstr ""
+msgstr "OGRとは何の略ですか？"
 
 #: ../../source/faq.rst:32
 msgid ""
@@ -75,7 +80,7 @@ msgstr ""
 
 #: ../../source/faq.rst:35
 msgid "What does CPL stand for?"
-msgstr ""
+msgstr "CPLとは何の略ですか？" 
 
 #: ../../source/faq.rst:37
 msgid ""
@@ -94,7 +99,7 @@ msgstr ""
 
 #: ../../source/faq.rst:42
 msgid "When was the GDAL project started?"
-msgstr ""
+msgstr "GDALプロジェクトはいつ始まりましたか？"
 
 #: ../../source/faq.rst:44
 msgid ""
@@ -104,7 +109,7 @@ msgstr ""
 
 #: ../../source/faq.rst:47
 msgid "Is GDAL/OGR proprietary software?"
-msgstr ""
+msgstr "GDAL/OGRはどのライセンスを使用していますか？"
 
 #: ../../source/faq.rst:49
 msgid "No, GDAL/OGR is a Free and Open Source Software."
@@ -112,15 +117,15 @@ msgstr ""
 
 #: ../../source/faq.rst:52
 msgid "What license does GDAL/OGR use?"
-msgstr ""
+msgstr "GDAL/OGRはどのライセンスを使用していますか？"
 
 #: ../../source/faq.rst:54
 msgid "See :ref:`license`"
-msgstr ""
+msgstr "参照 :ref:`license`"
 
 #: ../../source/faq.rst:57
 msgid "What operating systems does GDAL-OGR run on?"
-msgstr ""
+msgstr "GDAL-OGRはどのオペレーティングシステムで動作しますか？"
 
 #: ../../source/faq.rst:59
 msgid ""
@@ -131,11 +136,11 @@ msgstr ""
 
 #: ../../source/faq.rst:62
 msgid "Is there a graphical user interface to GDAL/OGR?"
-msgstr ""
+msgstr "GDL/OGRにはグラフィカルユーザーインターフェースがありますか？"
 
 #: ../../source/faq.rst:64
 msgid "See :ref:`software_using_gdal`:"
-msgstr ""
+msgstr "参照 :ref:`software_using_gdal`:"
 
 #: ../../source/faq.rst:72
 msgid "What compiler can I use to build GDAL/OGR?"
@@ -159,7 +164,7 @@ msgstr ""
 
 #: ../../source/faq.rst:81
 msgid "See :ref:`community`"
-msgstr ""
+msgstr "参照 :ref:`software_using_gdal`:"
 
 #: ../../source/faq.rst:83
 msgid ""

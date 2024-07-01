@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/drivers/raster/index.rst:5
 msgid "Raster drivers"
-msgstr ""
+msgstr "ラスタードライバー"
 
 #: ../../source/drivers/raster/driver_summary.rst:11
 msgid "Short name"
-msgstr ""
+msgstr "短縮名"
 
 #: ../../source/drivers/raster/driver_summary.rst:12
 msgid "Long name"
-msgstr ""
+msgstr "名称"
 
 #: ../../source/drivers/raster/driver_summary.rst:13
 msgid "Creation (1)"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:15
 msgid "Geo-referencing"
-msgstr ""
+msgstr "ジオレファレンス"
 
 #: ../../source/drivers/raster/driver_summary.rst:16
 msgid "Build requirements"

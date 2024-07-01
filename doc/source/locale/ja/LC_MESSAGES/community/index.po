@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:5
 msgid "Community"
-msgstr ""
+msgstr "コミュニティ"
 
 #: ../../source/community/index.rst:7
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:16
 msgid "Code of Conduct"
-msgstr ""
+msgstr "行動規範"
 
 #: ../../source/community/index.rst:20
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:32
 msgid "Mailing List"
-msgstr ""
+msgstr "メーリングリスト"
 
 #: ../../source/community/index.rst:34
 msgid ""

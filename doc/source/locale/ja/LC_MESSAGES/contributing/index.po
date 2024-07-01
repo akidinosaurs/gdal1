@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/contributing/index.rst:5
 msgid "How to contribute?"
-msgstr ""
+msgstr "どのように貢献できますか?"
 
 #: ../../source/contributing/index.rst:7
 msgid "There are several ways for users to contribute to GDAL:"
-msgstr ""
+msgstr "GDAL に貢献するためのいくつかの方法があります:"
 
 #: ../../source/contributing/index.rst:9
 msgid ":ref:`contributing code<development>` (bug fixes or enhancements)"

@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/faq.rst:5
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../source/faq.rst:12
 msgid "Contents"
@@ -63,6 +63,9 @@ msgid ""
 "Features which was separated from GDAL. With the GDAL 2.0 release, the "
 "GDAL and OGR components were integrated together."
 msgstr ""
+"OGR は OpenGIS Simple Features にインスパイアされたベクタ"
+"IOライブラリでGDALとは別のものでした。GDAL 2.0 のリリース時に、"
+"GDAL と OGR のコンポーネントは統合されました。"
 
 #: ../../source/faq.rst:30
 msgid "What does OGR stand for?"
@@ -77,6 +80,12 @@ msgid ""
 "meaning of OGR in this name is historical. OGR is also the prefix used "
 "everywhere in the source of the library for class names, filenames, etc."
 msgstr ""
+"OGR は OpenGIS Simple Features Reference Implementationの略称でした。 "
+"ただしOGR はOpenGIS Simple Feature specificationに完全に準拠しておらず、 "
+" 仕様の実装としては承認されていないため"
+"この名前は OGR Simple Features Libraryに変更していました。この名前における"
+"OGR は歴史的な意味しかありません。また OGRはライブラリのソースのあらゆる場所で"
+"クラス名,ファイル名等に利用される接頭語でもあります。"
 
 #: ../../source/faq.rst:35
 msgid "What does CPL stand for?"
@@ -106,10 +115,12 @@ msgid ""
 "In late 1998, Frank Warmerdam started to work as independent professional"
 " on the GDAL/OGR library."
 msgstr ""
+"1998年後半, Frank Warmerdam は独立した専門家として"
+"GDAL/OGR libraryライブラリの仕事を開始しました。"
 
 #: ../../source/faq.rst:47
 msgid "Is GDAL/OGR proprietary software?"
-msgstr "GDAL/OGRはどのライセンスを使用していますか？"
+msgstr "GDAL/OGRはプロプライエタリライセンスのソフトウェアですか？"
 
 #: ../../source/faq.rst:49
 msgid "No, GDAL/OGR is a Free and Open Source Software."
@@ -144,7 +155,7 @@ msgstr "参照 :ref:`software_using_gdal`:"
 
 #: ../../source/faq.rst:72
 msgid "What compiler can I use to build GDAL/OGR?"
-msgstr ""
+msgstr "GDAL/OGRをビルドするためにどのコンパイラを使用できますか？"
 
 #: ../../source/faq.rst:74
 msgid ""
@@ -161,10 +172,12 @@ msgid ""
 "I have a question that's not answered here. Where can I get more "
 "information?"
 msgstr ""
+"ここで回答がされていない質問があります。 そのような場合私はどこで"
+"情報を得ることができますか?"
 
 #: ../../source/faq.rst:81
 msgid "See :ref:`community`"
-msgstr "参照 :ref:`software_using_gdal`:"
+msgstr "参照 :ref:`community`"
 
 #: ../../source/faq.rst:83
 msgid ""
@@ -177,7 +190,7 @@ msgstr ""
 
 #: ../../source/faq.rst:86
 msgid "How do I add support for a new format?"
-msgstr ""
+msgstr "新しいフォーマットのサポートを追加するにはどうすればよいですか？"
 
 #: ../../source/faq.rst:88
 msgid ""
@@ -187,17 +200,17 @@ msgstr ""
 
 #: ../../source/faq.rst:91
 msgid "Is GDAL thread-safe ?"
-msgstr ""
+msgstr "GDALはスレッドセーフですか？"
 
 #: ../../source/faq.rst:93
 msgid "See :ref:`multithreading`"
-msgstr ""
+msgstr "参照 :ref:`multithreading`"
 
 #: ../../source/faq.rst:96
 msgid "How do I cite GDAL ?"
-msgstr ""
+msgstr "GDALをどのように引用すればよいですか？"
 
 #: ../../source/faq.rst:98
 msgid "See `CITATION`_"
-msgstr ""
+msgstr "参照 `CITATION`_"
 

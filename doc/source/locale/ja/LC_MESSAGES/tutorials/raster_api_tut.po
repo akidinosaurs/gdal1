@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/tutorials/raster_api_tut.rst:5
 msgid "Raster API tutorial"
-msgstr ""
+msgstr "ラスターAPIチュートリアル"
 
 #: ../../source/tutorials/raster_api_tut.rst:8
 msgid "Opening the File"
-msgstr ""
+msgstr "ファイルを開きます"
 
 #: ../../source/tutorials/raster_api_tut.rst:10
 msgid ""

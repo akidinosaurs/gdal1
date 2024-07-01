@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/tutorials/vector_api_tut.rst:5
 msgid "Vector API tutorial"
-msgstr ""
+msgstr "ベクターAPIチュートリアル"
 
 #: ../../source/tutorials/vector_api_tut.rst:7
 msgid ""

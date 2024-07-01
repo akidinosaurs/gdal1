@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../source/download.rst:54
 msgid "Binaries"
-msgstr ""
+msgstr "バイナリ"
 
 #: ../../source/download.rst:56
 msgid ""
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../source/download.rst:94
 msgid "Cross-Platform Package Managers"
-msgstr ""
+msgstr "クロスプラットフォームパッケージマネージャ"
 
 #: ../../source/download.rst:99
 msgid "Conda"

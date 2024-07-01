@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/tutorials/vector_driver_tut.rst:5
 msgid "Vector driver implementation tutorial"
-msgstr ""
+msgstr "ベクタードライバー実装チュートリアル"
 
 #: ../../source/tutorials/vector_driver_tut.rst:10
 msgid "Overall Approach"

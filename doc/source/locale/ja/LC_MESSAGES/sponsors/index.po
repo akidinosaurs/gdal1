@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/sponsors/index.rst:5
 msgid "Sponsors"
-msgstr ""
+msgstr "スポンサー"
 
 #: ../../source/sponsors/index.rst:7
 msgid ""

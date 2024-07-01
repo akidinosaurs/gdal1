@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/drivers/vector/index.rst:5
 msgid "Vector drivers"
-msgstr ""
+msgstr "ベクタードライバー"
 
 #: ../../source/drivers/vector/driver_summary.rst:11
 msgid "Short name"
-msgstr ""
+msgstr "短縮名"
 
 #: ../../source/drivers/vector/driver_summary.rst:12
 msgid "Long name"
-msgstr ""
+msgstr "名称"
 
 #: ../../source/drivers/vector/driver_summary.rst:13
 msgid "Creation"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../source/drivers/vector/driver_summary.rst:14
 msgid "Geo-referencing"
-msgstr ""
+msgstr "ジオレファレンス"
 
 #: ../../source/drivers/vector/driver_summary.rst:15
 msgid "Build requirements"

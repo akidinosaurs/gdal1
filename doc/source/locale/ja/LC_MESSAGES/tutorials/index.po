@@ -21,27 +21,28 @@ msgstr ""
 
 #: ../../source/tutorials/index.rst:5
 msgid "Tutorials"
-msgstr ""
+msgstr "チュートリアル"
 
 #: ../../source/tutorials/index.rst:8
 msgid "Raster"
-msgstr ""
+msgstr "ラスター"
 
 #: ../../source/tutorials/index.rst:20
 msgid "Multidimensional raster"
-msgstr ""
+msgstr "多次元ラスター"
 
 #: ../../source/tutorials/index.rst:28
 msgid "Vector"
-msgstr ""
+msgstr "ベクター"
 
 #: ../../source/tutorials/index.rst:38
 msgid "Geographic Network Model"
-msgstr ""
+msgstr "ジオグラフィックネットワークモデル"
 
 #: ../../source/tutorials/index.rst:46
 msgid ""
 "Projections and Spatial Reference Systems tutorial (OSR - "
 "OGRSpatialReference)"
 msgstr ""
-
+"投影と空間参照システムチュートリアル (OSR - "
+"OGRSpatialReference)"

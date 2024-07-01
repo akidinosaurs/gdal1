@@ -21,29 +21,31 @@ msgstr ""
 
 #: ../../source/programs/argument_syntax.rst:5
 msgid "Syntax of arguments of command-line utilities"
-msgstr ""
+msgstr "コマンドラインユーティリティの引数構文"
 
 #: ../../source/programs/argument_syntax.rst:7
 msgid ""
 "The following table describes the notation used to document the syntax of"
 " arguments of command-line utilities."
 msgstr ""
+"以下の表はコマンドラインユーティリティの引数の構文を説明する文書の表記を"
+"説明しています。"
 
 #: ../../source/programs/argument_syntax.rst:13
 msgid "Notation"
-msgstr ""
+msgstr "表記"
 
 #: ../../source/programs/argument_syntax.rst:14
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/programs/argument_syntax.rst:16
 msgid "Text without brackets or braces"
-msgstr ""
+msgstr "括弧や中括弧を含まないテキスト"
 
 #: ../../source/programs/argument_syntax.rst:17
 msgid "Text that must be typed as shown"
-msgstr ""
+msgstr "表示されているとおりに入力する必要があるテキスト"
 
 #: ../../source/programs/argument_syntax.rst:19
 msgid "``<value>``"
@@ -51,51 +53,54 @@ msgstr ""
 
 #: ../../source/programs/argument_syntax.rst:20
 msgid "Placeholder for which a value must be substituted."
-msgstr ""
+msgstr "値を代入する必要があるプレースホルダー"
+
 
 #: ../../source/programs/argument_syntax.rst:22
 msgid "``[`` Text inside square brackets ``]``"
-msgstr ""
+msgstr "``[`` 角括弧内のテキスト ``]``"
 
 #: ../../source/programs/argument_syntax.rst:23
 msgid "Optional item."
-msgstr ""
+msgstr "オプションアイテム"
 
 #: ../../source/programs/argument_syntax.rst:25
 msgid "``{`` Text inside braces  ``}``"
-msgstr ""
+msgstr "``{`` 括弧内のテキスト  ``}``"
 
 #: ../../source/programs/argument_syntax.rst:26
 msgid "Set of required items, separated by a vertical bar."
-msgstr ""
+msgstr "垂直バーで区切られた必須のアイテムセット"
 
 #: ../../source/programs/argument_syntax.rst:28
 msgid "Vertical bar (``|``)"
-msgstr ""
+msgstr "垂直バー (``|``)"
 
 #: ../../source/programs/argument_syntax.rst:29
 msgid ""
 "Separator between mutually exclusive items. At least one must be "
 "specified."
 msgstr ""
+"排他的なアイテム群の区切り文字。少なくとも１つは"
+"指定されなければいけません。"
 
 #: ../../source/programs/argument_syntax.rst:31
 msgid "Ellipsis (``...``)"
-msgstr ""
+msgstr "省略記号 (``...``)"
 
 #: ../../source/programs/argument_syntax.rst:32
 msgid "Placed after an item that can be repeated."
-msgstr ""
+msgstr "繰り返し可能なアイテムの後に置かれます。"
 
 #: ../../source/programs/argument_syntax.rst:36
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../source/programs/argument_syntax.rst:38
 msgid "Given the following synopsis:"
-msgstr ""
+msgstr "以下のような構文が指定された場合:"
 
 #: ../../source/programs/argument_syntax.rst:45
 msgid "The following command lines are valid:"
-msgstr ""
+msgstr "このようなコマンドラインは正しいです:"
 

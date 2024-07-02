@@ -7,6 +7,8 @@ SPHINXOPTS    ?= --keep-going -j auto -W
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
+LA            = en
+SPHINXINTL    ?= sphinx-intl
 
 # Use O="-D enable_redirects=1" with "make html" to create redirects
 
@@ -71,9 +73,13 @@ generated_rst_files: $(BUILDDIR)/.doxygen_up_to_date
 	$(PYTHON) "$(SOURCEDIR)/build_driver_summary.py" "$(SOURCEDIR)/drivers/raster" raster_driver_summary "$(SOURCEDIR)/drivers/raster/driver_summary.rst"
 	$(PYTHON) "$(SOURCEDIR)/build_driver_summary.py" "$(SOURCEDIR)/drivers/vector" vector_driver_summary "$(SOURCEDIR)/drivers/vector/driver_summary.rst"
 
+update: gettext
+	$(SPHINXINTL) update -d $(SOURCEDIR)/locale -p $(BUILDDIR)/gettext -l $(LA)
+
 .PHONY: html latexpdf
 html: generated_rst_files
-	$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	echo "$(SPHINXOPTS) $(SPHINXINTLOPTS) $(LA)"
+	$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)/$(LA)" $(SPHINXOPTS) $(O)
 	# Hack to hide the TOC
 	sed 's/<div class="toctree-wrapper compound">/<div class="toctree-wrapper compound" style="display: none;">/' < "$(BUILDDIR)/html/drivers/raster/index.html" > "$(BUILDDIR)/html/drivers/raster/index.html.mod"
 	mv "$(BUILDDIR)/html/drivers/raster/index.html.mod" "$(BUILDDIR)/html/drivers/raster/index.html"

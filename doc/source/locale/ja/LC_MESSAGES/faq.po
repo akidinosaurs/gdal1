@@ -197,6 +197,8 @@ msgid ""
 "To some extent this is now covered by the :ref:`raster_driver_tut` and "
 ":ref:`vector_driver_tut`"
 msgstr ""
+"現在ある程度は :ref:`raster_driver_tut` と "
+":ref:`vector_driver_tut` で説明されています。"
 
 #: ../../source/faq.rst:91
 msgid "Is GDAL thread-safe ?"

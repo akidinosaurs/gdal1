@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-01 04:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Yoichi Kayama<yoichi.kayama@gmail.com>\n"
 "Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,33 +21,34 @@ msgstr ""
 
 #: ../../source/programs/gdalinfo.rst:5
 msgid "gdalinfo"
-msgstr ""
+msgstr "gdalinfo"
 
 #: ../../source/programs/gdalinfo.rst:9
 msgid "Lists information about a raster dataset."
-msgstr ""
+msgstr "ラスターデータセットに関する情報をリストします。"
 
 #: ../../source/programs/gdalinfo.rst:14
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../source/programs/gdalinfo.rst:27
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/programs/gdalinfo.rst:29
 msgid ""
 ":program:`gdalinfo` program lists various information about a GDAL "
 "supported raster dataset."
 msgstr ""
-
+":program:`gdalinfo` プログラムは多彩なGDALサポートラスターデータセットについての情報を"
+"リストします"
 #: ../../source/programs/gdalinfo.rst:32
 msgid "The following command line parameters can appear in any order"
-msgstr ""
+msgstr "以下のコマンドラインパラメータを任意の順序で利用できます"
 
 #: ../../source/programs/options/help.rst:3
 msgid "Show this help message and exit"
-msgstr ""
+msgstr "このヘルプを表示して終了します"
 
 #: ../../source/programs/options/help_general.rst:3
 msgid ""
@@ -265,11 +266,11 @@ msgstr ""
 
 #: ../../source/programs/gdalinfo.rst:165
 msgid "This utility is also callable from C with :cpp:func:`GDALInfo`."
-msgstr ""
+msgstr "このユーティリティはC言語から呼び出すこともできます :cpp:func:`GDALInfo`."
 
 #: ../../source/programs/gdalinfo.rst:170
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../source/programs/gdalinfo.rst:201
 msgid ""
@@ -280,5 +281,5 @@ msgstr ""
 
 #: ../../source/programs/gdalinfo.rst:203
 msgid "Example of JSON output with ``gdalinfo -json byte.tif``"
-msgstr ""
+msgstr "``gdalinfo -json byte.tif`` を利用してJSON出力を行った例"
 

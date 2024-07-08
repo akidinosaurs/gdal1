@@ -55,6 +55,8 @@ msgid ""
 "Gives a brief usage message for the generic GDAL commandline options and "
 "exit."
 msgstr ""
+"一般的なGDALコマンドラインオプションの簡単な利用方法メッセージを表示して "
+"終了します。"
 
 #: ../../source/programs/gdalinfo.rst:40
 msgid ""

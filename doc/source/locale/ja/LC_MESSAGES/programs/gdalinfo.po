@@ -85,7 +85,7 @@ msgid ""
 "Read and display image statistics. Force computation if no statistics are"
 " stored in an image."
 msgstr ""
-"画像の統計情報を読み取って表示します. 統計情報が画像に保存されていない場合は"
+"画像の統計情報を読み取って表示します。 統計情報が画像に保存されていない場合は"
 " 計算を強制します。"
 
 #: ../../source/programs/gdalinfo.rst:58
@@ -95,6 +95,10 @@ msgid ""
 "a subset of all tiles. Useful if you are in a hurry and don't want "
 "precise stats."
 msgstr ""
+"画像の統計情報を読み取って表示します。 統計情報が画像に保存されていない場合は"
+" 計算を強制します。 ただしオーバービューや全タイルのサブセットを利用して計算が "
+"行われることがあります。 急いでいて正確な統計が必ずしも必要ない場合は便利です。"
+
 
 #: ../../source/programs/gdalinfo.rst:65
 msgid "Report histogram information for all bands."
@@ -115,11 +119,11 @@ msgstr ""
 
 #: ../../source/programs/gdalinfo.rst:80
 msgid "Suppress printing of raster attribute table."
-msgstr ""
+msgstr "ラスター属性テープルの出力を抑制します。"
 
 #: ../../source/programs/gdalinfo.rst:84
 msgid "Suppress printing of color table."
-msgstr ""
+msgstr "カラーテーブルの出力を抑制します。"
 
 #: ../../source/programs/gdalinfo.rst:88
 msgid "Force computation of the checksum for each band in the dataset."

@@ -66,18 +66,27 @@ msgid ""
 "spec.md>`_ , including statistics and histograms if ``-stats`` or "
 "``-hist`` flags are passed, respectively."
 msgstr ""
+"json 形式で出力を表示します。GDAL 3.6以降,"
+" `STAC item "
+"<https://github.com/radiantearth/stac-spec/blob/v1.0.0/item-spec/item-"
+"spec.md>`_  を生成するために便利なkey-valueペアを作成する機能を含みます。さらに ``-stats`` または "
+"``-hist`` フラグが渡された場合はそれぞれ統計とヒストグラムが作成されます。"
 
 #: ../../source/programs/gdalinfo.rst:48
 msgid ""
 "Force computation of the actual min/max values for each band in the "
 "dataset."
 msgstr ""
+"データセット内の各バンドの正確な最小値/最大値を強制的に"
+"計算します。"
 
 #: ../../source/programs/gdalinfo.rst:53
 msgid ""
 "Read and display image statistics. Force computation if no statistics are"
 " stored in an image."
 msgstr ""
+"画像の統計情報を読み取って表示します. 統計情報が画像に保存されていない場合は"
+" 計算を強制します。"
 
 #: ../../source/programs/gdalinfo.rst:58
 msgid ""
@@ -89,7 +98,7 @@ msgstr ""
 
 #: ../../source/programs/gdalinfo.rst:65
 msgid "Report histogram information for all bands."
-msgstr ""
+msgstr "すべてのバンドのヒストグラム情報をレポートします。"
 
 #: ../../source/programs/gdalinfo.rst:69
 msgid ""

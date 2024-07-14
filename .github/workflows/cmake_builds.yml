@@ -9,6 +9,7 @@ on:
         branches-ignore:
             - 'backport**'
             - 'dependabot**'
+            - 'i18n**'
     pull_request:
         paths-ignore:
             - 'doc/**'

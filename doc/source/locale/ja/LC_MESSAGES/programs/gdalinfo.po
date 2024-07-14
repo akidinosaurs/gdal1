@@ -110,12 +110,17 @@ msgid ""
 "datasets with huge amount of GCPs, such as L1B AVHRR or HDF4 MODIS which "
 "contain thousands of them."
 msgstr ""
+"グランドコントロールポイントリストの出力を抑制します。この機能は膨大な "
+"GCPを保有するデータセット, 例えば L1B AVHRR や HDF4 MODIS のような "
+"数千のGCPを保有するデータセットに利用する時に便利です。"
 
 #: ../../source/programs/gdalinfo.rst:75
 msgid ""
 "Suppress metadata printing. Some datasets may contain a lot of metadata "
 "strings."
 msgstr ""
+"メタデータの出力を抑制します。いくつかのデータセットは多数のメタデータ文字列を"
+"保有しています。"
 
 #: ../../source/programs/gdalinfo.rst:80
 msgid "Suppress printing of raster attribute table."
@@ -127,31 +132,31 @@ msgstr "カラーテーブルの出力を抑制します。"
 
 #: ../../source/programs/gdalinfo.rst:88
 msgid "Force computation of the checksum for each band in the dataset."
-msgstr ""
+msgstr "データセット内の各バンドのチェックサムの計算を行います。"
 
 #: ../../source/programs/gdalinfo.rst:92
 msgid "List all metadata domains available for the dataset."
-msgstr ""
+msgstr "データセットで利用可能なメタデータ ドメインを一覧表示します。"
 
 #: ../../source/programs/gdalinfo.rst:96
 msgid "adds metadata using:"
-msgstr ""
+msgstr "以下を利用してメタデータを追加します:"
 
 #: ../../source/programs/gdalinfo.rst:98
 msgid "``domain`` Report metadata for the specified domain."
-msgstr ""
+msgstr "``domain`` 指定されたドメインのメタデータをレポートします。"
 
 #: ../../source/programs/gdalinfo.rst:100
 msgid "``all`` Report metadata for all domains."
-msgstr ""
+msgstr "``all`` すべてのドメインのメタデータをレポートします。"
 
 #: ../../source/programs/gdalinfo.rst:104
 msgid "Only display the first file of the file list."
-msgstr ""
+msgstr "ファイルリストの先頭のファイルのみ表示します。"
 
 #: ../../source/programs/gdalinfo.rst:108
 msgid "WKT format used to display the SRS. Currently the supported values are:"
-msgstr ""
+msgstr "SRSを表示するために使用されるWKT形式。現在サポートされている値は次のとおりです:"
 
 #: ../../source/programs/gdalinfo.rst:111
 msgid "``WKT1``"
@@ -179,14 +184,17 @@ msgid ""
 "subdataset with specified ``n`` number (starting from 1). This is an "
 "alternative of giving the full subdataset name."
 msgstr ""
+"入力データセットに多くのサブデータセットが含まれる場合は "
+"指定された番号 ``n``  (１から始まる)のサブデータセットを読んで表示します。 これは"
+"完全なサブセット名称を指定する方法の代替として利用できます。"
 
 #: ../../source/programs/gdalinfo.rst:131
 msgid "Report a PROJ.4 string corresponding to the file's coordinate system."
-msgstr ""
+msgstr "指定ファイルの座標系に対応するPROJ.4文字列をレポートします。"
 
 #: ../../source/programs/gdalinfo.rst:135
 msgid "Dataset open option (format specific)."
-msgstr ""
+msgstr "データセットオープンオプション (フォーマット固有)。"
 
 #: ../../source/programs/options/if.rst:3
 msgid ""
@@ -198,10 +206,17 @@ msgid ""
 "dataset. In particular, some drivers have requirements on file "
 "extensions."
 msgstr ""
+"入力ファイルを開くために試行する Format/driver 名。 通常は"
+"指定する必要はありませんが、適切なドライバーを選択できなかった場合に"
+"自動ドライバー検出をスキップするために使用できます。 このオプションは"
+"候補となるドライバーを複数回指定するために複数回繰り返すことができます。"
+"これらのドライバーにデータセットを開くように強制するものでないことに注意して下さい。"
+"特に一部のドライバーにはファイル拡張子に関する要件があります。 "
+
 
 #: ../../source/programs/gdalinfo.rst:140
 msgid "The gdalinfo will report all of the following (if known):"
-msgstr ""
+msgstr "gdalinfo は以下のすべての情報を表示します (既知の場合):"
 
 #: ../../source/programs/gdalinfo.rst:142
 msgid "The format driver used to access the file."

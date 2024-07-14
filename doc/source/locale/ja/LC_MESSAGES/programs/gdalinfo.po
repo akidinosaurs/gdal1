@@ -220,79 +220,83 @@ msgstr "gdalinfo は以下のすべての情報を表示します (既知の場�
 
 #: ../../source/programs/gdalinfo.rst:142
 msgid "The format driver used to access the file."
-msgstr ""
+msgstr "ファイルアクセスに利用したフォーマットドライバー"
 
 #: ../../source/programs/gdalinfo.rst:143
 msgid "Raster size (in pixels and lines)."
-msgstr ""
+msgstr "ラスターサイズ(ピクセル数と行数)"
 
 #: ../../source/programs/gdalinfo.rst:144
 msgid "The coordinate system for the file (in OGC WKT)."
-msgstr ""
+msgstr "ファイルの座標系 (OGC WKT形式)"
 
 #: ../../source/programs/gdalinfo.rst:145
 msgid ""
 "The geotransform associated with the file (rotational coefficients are "
 "currently not reported)."
 msgstr ""
+"ファイルに関連つけられた地理変換(回転係数は "
+"現在報告されません)。"
 
 #: ../../source/programs/gdalinfo.rst:147
 msgid ""
 "Corner coordinates in georeferenced, and if possible lat/long based on "
 "the full geotransform (but not GCPs)."
 msgstr ""
+"角の座標はジオリファレンスされ、可能な場合は完全な地理変換に基づいた 経度/緯度"
+"が (しかしGCPではない)表示されます。"
 
 #: ../../source/programs/gdalinfo.rst:149
 msgid "Ground control points."
-msgstr ""
+msgstr "グランドコントロールポイント。"
 
 #: ../../source/programs/gdalinfo.rst:150
 msgid "File wide (including subdatasets) metadata."
-msgstr ""
+msgstr "ファイル全体 (サブデータセットを含む)のメタデータ。"
 
 #: ../../source/programs/gdalinfo.rst:151
 msgid "Band data types."
-msgstr ""
+msgstr "バンドデータタイプ"
 
 #: ../../source/programs/gdalinfo.rst:152
 msgid "Band color interpretations."
-msgstr ""
+msgstr "バンド色の解釈。"
 
 #: ../../source/programs/gdalinfo.rst:153
 msgid "Band block size."
-msgstr ""
+msgstr "バンドブロックサイズ。"
 
 #: ../../source/programs/gdalinfo.rst:154
 msgid "Band descriptions."
-msgstr ""
+msgstr "バンドの説明。"
 
 #: ../../source/programs/gdalinfo.rst:155
 msgid "Band min/max values (internally known and possibly computed)."
-msgstr ""
+msgstr "バンドの最小値/最大値(内部的に既知のデータまたは計算されたもの)。"
 
 #: ../../source/programs/gdalinfo.rst:156
 msgid "Band checksum (if computation asked)."
-msgstr ""
+msgstr "バンドチェックサム (計算が要求された場合)。"
 
 #: ../../source/programs/gdalinfo.rst:157
 msgid "Band NODATA value."
-msgstr ""
+msgstr "バンドのNODATA値。"
 
 #: ../../source/programs/gdalinfo.rst:158
 msgid "Band overview resolutions available."
-msgstr ""
+msgstr "バンドの縮小画像の解像度。"
 
 #: ../../source/programs/gdalinfo.rst:159
 msgid "Band unit type (i.e.. \"meters\" or \"feet\" for elevation bands)."
-msgstr ""
+msgstr "バンドの単位タイプ(例. 標高バンドの場合  \"meters\" または  \"feet\" )。"
 
 #: ../../source/programs/gdalinfo.rst:160
 msgid "Band pseudo-color tables."
-msgstr ""
+msgstr "バンド疑似カラーテーブル"
 
 #: ../../source/programs/gdalinfo.rst:163
 msgid "C API"
-msgstr ""
+msgstr "C API"
 
 #: ../../source/programs/gdalinfo.rst:165
 msgid "This utility is also callable from C with :cpp:func:`GDALInfo`."
@@ -308,6 +312,9 @@ msgid ""
 "degree, minute, second, inspect the ``wgs84Extent`` member of gdalinfo "
 "-json:"
 msgstr ""
+"上記の度、分、秒で表された角の座標を10進数で表したい場合は "
+"ｇdalinfo -jsonのメンバー ``wgs84Extent`` について調べてください:"
+
 
 #: ../../source/programs/gdalinfo.rst:203
 msgid "Example of JSON output with ``gdalinfo -json byte.tif``"

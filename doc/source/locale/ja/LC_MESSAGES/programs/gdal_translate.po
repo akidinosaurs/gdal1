@@ -421,6 +421,9 @@ msgid ""
 "assigns georeferenced bounds to the output file, ignoring what would have"
 " been derived from the source file. So this does not cause reprojection "
 "to the specified SRS. This is mutually exclusive with :option:`-a_gt`"
+"出力ファイルの地理参照境界を割り当て/オーバーライドします。"
+"これにより、ソースファイルから派生するはずのものを無視して、出力ファイルに地理参照境界が割り当てられます。"
+"したがって、指定されたSRSへの再投影は発生しません。これは:option:-a_gtと相互排他です。"
 msgstr ""
 
 #: ../../source/programs/gdal_translate.rst:276
@@ -431,6 +434,9 @@ msgid ""
 "specified SRS. See :ref:`geotransforms_tut`. This is mutually exclusive "
 "with :option:`-a_ullr`"
 msgstr ""
+"出力ファイルのジオトランスフォームを割り当て/オーバーライドします。"
+"これにより、ソースファイルから派生するはずのものを無視して、出力ファイルにジオトランスフォームが割り当てられます。"
+"したがって、指定されたSRSへの再投影は発生しません。:ref:geotransforms_tutを参照してください。これは:option:-a_ullrと相互排他です。"
 
 #: ../../source/programs/gdal_translate.rst:286
 msgid ""
@@ -440,28 +446,35 @@ msgid ""
 " this does not cause pixel values that are equal to that nodata value to "
 "be changed to the value specified with this option."
 msgstr ""
+"指定されたnodata値を出力バンドに割り当てます。ソースファイルに存在する場合、出力ファイルにnodata値を設定しないようにするには、noneに設定できます。"
+"入力データセットにnodata値がある場合、これにより、そのnodata値に等しいピクセル値がこのオプションで指定された値に変更されることはないことに注意してください。"
 
 #: ../../source/programs/gdal_translate.rst:294
 msgid ""
 "Override the color interpretation of band X (where X is a valid band "
 "number, starting at 1)"
 msgstr ""
+"バンドX（Xは1から始まる有効なバンド番号）のカラー解釈をオーバーライドします。"
 
 #: ../../source/programs/gdal_translate.rst:301
 msgid ""
 "Override the color interpretation of all specified bands. For example "
 "-colorinterp red,green,blue,alpha for a 4 band output dataset."
 msgstr ""
+"すべての指定されたバンドのカラー解釈をオーバーライドします。"
+"たとえば、4バンド出力データセットの場合は-colorinterp red,green,blue,alphaです。"
 
 #: ../../source/programs/gdal_translate.rst:308
 msgid "Passes a metadata key and value to set on the output dataset if possible."
 msgstr ""
+"可能であれば、出力データセットに設定するメタデータキーと値を渡します。"
 
 #: ../../source/programs/gdal_translate.rst:312
 msgid ""
 "Passes a metadata key and value in specified domain to set on the output "
 "dataset if possible."
 msgstr ""
+"可能であれば、指定されたドメインのメタデータキーと値を出力データセットに設定するために渡します。"
 
 #: ../../source/programs/gdal_translate.rst:320
 msgid ""
@@ -470,6 +483,8 @@ msgid ""
 "driver supports creation options to control compression, and whether the "
 "file should be tiled."
 msgstr ""
+"多くの形式には、作成されるファイルの詳細を制御するために使用できる1つ以上のオプション作成オプションがあります。"
+"たとえば、GeoTIFFドライバは圧縮を制御する作成オプション、およびファイルをタイル化するかどうかをサポートします。"
 
 #: ../../source/programs/gdal_translate.rst:325
 msgid ""
@@ -481,6 +496,9 @@ msgid ""
 "driver creation options. See :ref:`raster_drivers` format specific "
 "documentation for legal creation options for each format."
 msgstr ""
+"利用可能な作成オプションは、形式ドライバによって異なり、一部の単純な形式には作成オプションがまったくありません。"
+"形式ごとにサポートされるオプションのリストは、:ref:--formats <raster_common_options_formats> コマンドラインオプションでリストできますが、形式のドキュメントはドライバ作成オプションに関する情報の最終的なソースです。"
+"形式ごとの法的な作成オプションについては、:ref:raster_drivers形式固有のドキュメントを参照してください。"
 
 #: ../../source/programs/gdal_translate.rst:334
 msgid ""
@@ -488,12 +506,14 @@ msgid ""
 ":cpp:func:`GDALTranslate` and :cpp:func:`GDALCreateCopy`) recognize the "
 "following options:"
 msgstr ""
+"ドライバ固有の作成オプションに加えて、gdal_translate（および:cpp:func:GDALTranslateおよび:cpp:func:GDALCreateCopy）は次のオプションを認識します："
 
 #: ../../source/programs/gdal_translate.rst:342
 msgid ""
 "Can be specified to YES to avoid prior destruction of existing dataset, "
 "for drivers that support adding several subdatasets (e.g. GTIFF, NITF)"
 msgstr ""
+"複数のサブデータセットの追加をサポートするドライバ（例：GTIFF、NITF）について、既存のデータセットの事前破壊を回避するためにYESに指定できます"
 
 #: ../../source/programs/gdal_translate.rst:350
 msgid ""
@@ -505,6 +525,11 @@ msgid ""
 "IMAGE_STRUCTURE or DERIVED_SUBDATASETS). Currently only recognized by the"
 " GTiff, COG, VRT, PNG and JPEG drivers."
 msgstr ""
+"ソースデータセットのメタデータドメインを宛先データセットにコピーするかどうかを定義します。"
+"デフォルトのAUTOモードでは、「安全な」ドメインのみがコピーされます。"
+"これには、デフォルトのメタデータドメインが含まれます（一部のドライバにはIMD、RPC、GEOLOCATIONなどの他のドメインが含まれる場合があります）。"
+"YESに設定すると、すべてのドメインがコピーされます（ただし、IMAGE_STRUCTUREやDERIVED_SUBDATASETSなどのいくつかの予約されたものを除く）。"
+"現在、GTiff、COG、VRT、PNG、およびJPEGドライバでのみ認識されます。"
 
 #: ../../source/programs/gdal_translate.rst:359
 msgid "When setting NO, no source metadata will be copied."

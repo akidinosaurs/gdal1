@@ -534,6 +534,7 @@ msgstr ""
 #: ../../source/programs/gdal_translate.rst:359
 msgid "When setting NO, no source metadata will be copied."
 msgstr ""
+"NOに設定すると、ソースメタデータはコピーされません。"
 
 #: ../../source/programs/gdal_translate.rst:365
 msgid ""
@@ -545,58 +546,76 @@ msgid ""
 "not practical). Currently only recognized by the GTiff, COG, VRT, PNG and"
 " JPEG drivers."
 msgstr ""
+"どのソースメタデータドメインをコピーするかを定義します。"
+"このオプションは、コピーされるソースメタデータドメインのリストを制限します（設定されていない場合、COPY_SRC_MDD=YESを意味します）。"
+"このオプションは、ソースドメインの数だけ指定できます。"
+"デフォルトのメタデータドメインは空の文字列 ""（"DEFAULT"）であり、空の文字列が実用的でない場合にも使用できます。"
+"現在、GTiff、COG、VRT、PNG、およびJPEGドライバでのみ認識されます。"
 
 #: ../../source/programs/gdal_translate.rst:374
 msgid "Do not copy the GCPs in the source dataset to the output dataset."
 msgstr ""
+"ソースデータセットのGCPを出力データセットにコピーしないでください。"
 
 #: ../../source/programs/gdal_translate.rst:378
 msgid ""
 "Add the indicated ground control point to the output dataset.  This "
 "option may be provided multiple times to provide a set of GCPs."
 msgstr ""
+"指定されたグランドコントロールポイントを出力データセットに追加します。"
+"このオプションは、複数回提供されることがあり、一連のGCPを提供します。"
 
 #: ../../source/programs/gdal_translate.rst:383
 msgid "Suppress progress monitor and other non-error output."
 msgstr ""
+"進行状況モニターおよびその他のエラーでない出力を抑制します。"
 
 #: ../../source/programs/gdal_translate.rst:387
 msgid ""
 "Copy all subdatasets of this file to individual output files.  Use with "
 "formats like HDF that have subdatasets."
 msgstr ""
+"このファイルのすべてのサブデータセットを個別の出力ファイルにコピーします。"
+"サブデータセットを持つHDFのような形式と一緒に使用します。"
 
 #: ../../source/programs/gdal_translate.rst:392
 msgid "Force (re)computation of statistics."
 msgstr ""
+"統計の（再）計算を強制します。"
 
 #: ../../source/programs/gdal_translate.rst:396
 msgid "Do not copy source RAT into destination dataset."
 msgstr ""
+"ソースRATを宛先データセットにコピーしないでください。"
 
 #: ../../source/programs/gdal_translate.rst:400
 msgid ""
 "Do not copy the XMP metadata in the source dataset to the output dataset "
 "when driver is able to copy it."
 msgstr ""
+"ドライバがコピーできる場合、ソースデータセットのXMPメタデータを出力データセットにコピーしないでください。"
 
 #: ../../source/programs/gdal_translate.rst:406
 msgid "Dataset open option (format specific)"
 msgstr ""
+"データセットオプションを開く（形式固有）"
 
 #: ../../source/programs/gdal_translate.rst:410
 msgid ""
 "The source dataset name. It can be either file name, URL of data source "
 "or subdataset name for multi-dataset files."
 msgstr ""
+"ソースデータセットの名前です。"
+"それはファイル名、データソースのURL、またはマルチデータセットファイルのサブデータセット名のいずれかである可能性があります。"
 
 #: ../../source/programs/gdal_translate.rst:415
 msgid "The destination file name."
-msgstr ""
+msgstr "宛先ファイル名"
 
 #: ../../source/programs/gdal_translate.rst:419
 msgid "Nodata / source validity mask handling during resampling"
 msgstr ""
+"再サンプリング中のNodata/ソース有効マスク処理"
 
 #: ../../source/programs/gdal_translate.rst:421
 msgid ""
@@ -604,12 +623,14 @@ msgid ""
 "the source band, a mask band, an alpha band will not be used during "
 "resampling (when using :option:`-outsize` or :option:`-tr`)."
 msgstr ""
+"ソースバンド、マスクバンド、アルファバンドに設定されたnodata値メタデータを通じて識別されたマスクされた値は、再サンプリング中には使用されません（:option:-outsizeまたは:option:-trを使用する場合）。"
 
 #: ../../source/programs/nodata_handling_gdaladdo_gdal_translate.rst:1
 msgid ""
 "The details of how it is taken into account depends on the resampling "
 "kernel:"
 msgstr ""
+"それがどのように考慮されるかの詳細は、再サンプリングカーネルによって異なります:"
 
 #: ../../source/programs/nodata_handling_gdaladdo_gdal_translate.rst:3
 msgid ""
@@ -617,6 +638,8 @@ msgid ""
 "contributing source pixels is selected (in an implementation specific "
 "way). Its value is used as it, be it valid or invalid."
 msgstr ""
+"最近傍の再サンプリングの場合、各ターゲットピクセルに対して、寄与する可能性のあるソースピクセルの1つが選択されます（実装固有の方法）。"
+"その値は有効であろうと無効であろうとそのまま使用されます。"
 
 #: ../../source/programs/nodata_handling_gdaladdo_gdal_translate.rst:7
 msgid ""
@@ -630,6 +653,9 @@ msgid ""
 " is less than the radius of the resampling kernel, the target pixel is "
 "considered as nodata."
 msgstr ""
+"バイリニア、三次、キュービックスプライン、およびランチョスの場合、各ターゲットピクセルに対して、寄与するソースピクセルの重みがゼロに設定され、マスクされたときにそれらを無視します。"
+"三次には追加の特異性があります：カーネル内の重みの一部が負であることを考慮すると、そのような戦略は、有効なピクセルと無効なピクセルの交互がある場合に強いオーバーシュート/アンダーシュートにつながる可能性があります。"
+"したがって、水平方向または垂直方向のいずれかで、各次元の有効なソースピクセルの最大数が再サンプリングカーネルの半径よりも少ない場合、ターゲットピクセルはnodataと見なされます。"
 
 #: ../../source/programs/nodata_handling_gdaladdo_gdal_translate.rst:16
 msgid ""
@@ -637,6 +663,8 @@ msgid ""
 "target pixel are ignored if masked. Only the valid ones are taken into "
 "account. If there are none, the target pixel is considered as nodata."
 msgstr ""
+"他の再サンプリング方法の場合、ターゲットピクセルに寄与するソースピクセルがマスクされている場合は無視されます。"
+"有効なものだけが考慮されます。ない場合、ターゲットピクセルはnodataと見なされます。"
 
 #: ../../source/programs/gdal_translate.rst:428
 msgid "C API"
@@ -645,14 +673,16 @@ msgstr ""
 #: ../../source/programs/gdal_translate.rst:430
 msgid "This utility is also callable from C with :cpp:func:`GDALTranslate`."
 msgstr ""
+"このユーティリティは、:cpp:func:GDALTranslateを使用してCからも呼び出すことができます。"
 
 #: ../../source/programs/gdal_translate.rst:435
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 #: ../../source/programs/gdal_translate.rst:442
 msgid "To create a JPEG-compressed TIFF with internal mask from a RGBA dataset"
 msgstr ""
+"RGBAデータセットから内部マスクを含むJPEG圧縮TIFFを作成する"
 
 #: ../../source/programs/gdal_translate.rst:450
 msgid "To create a RGBA dataset from a RGB dataset with a mask"

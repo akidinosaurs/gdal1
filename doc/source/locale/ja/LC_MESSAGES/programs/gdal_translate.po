@@ -256,6 +256,15 @@ msgid ""
 "the output dataset) to specify the parameters of one or several specific "
 "bands."
 msgstr ""
+"入力ピクセル値を、範囲 src_min から src_max から、範囲 dst_min から dst_max にリスケールします。"
+"省略された場合、出力範囲は0から255です。省略された場合、入力範囲はソースデータセット全体から自動的に計算されます（"
+" :option:-srcwin または :option:-projwin で指定された可能性のあるウィンドウだけではありません）。"
+"これは大規模なソースデータセットでは遅い操作になる可能性があり、複数回使用する場合、複数の gdal_translate 呼び出しに対して、"
+"事前に gdalinfo -stats {source_dataset} を呼び出して統計を事前計算することが有益な場合があります（統計計算のシリアル化をサポートする形式では（GeoTIFF、VRT...））。"
+" :option:-scale の後に指定された値は、入力ラスター値に適用するスケールとオフセットを計算するためだけに使用されることに注意してください。"
+"特に、src_min および src_max は入力値をクリップするために使用されません。"
+" :option:-scale は複数回繰り返すことができ（1回だけ指定された場合、出力データセットのすべてのバンドに適用されます）、バンドごとのパラメータを指定します。"
+" "-scale_bn" 構文を使用して、特定のバンドのパラメータを指定することも可能です（例：出力データセットの2番目のバンドの場合、"-scale_2" ）。"
 
 #: ../../source/programs/gdal_translate.rst:168
 msgid ""
@@ -268,6 +277,10 @@ msgid ""
 "for the 2nd band of the output dataset) to specify the parameters of one "
 "or several specific bands."
 msgstr ""
+"べき関数による非線形スケーリングを適用します。exp_valはべき関数の指数です（正でなければなりません）。"
+"このオプションは、 -scale オプションと一緒に使用する必要があります。1回だけ指定された場合、-exponent は出力画像のすべてのバンドに適用されます。"
+"複数回繰り返して、バンドごとのパラメータを指定することができます。"
+" "-exponent_bn" 構文を使用して、特定のバンドのパラメータを指定することも可能です（例：出力データセットの2番目のバンドの場合、"-exponent_2" ）。"
 
 #: ../../source/programs/gdal_translate.rst:178
 msgid ""
@@ -276,6 +289,8 @@ msgid ""
 "datatype with the :option:`-ot` switch. The unscaled value is computed "
 "from the scaled raw value with the following formula:"
 msgstr ""
+"バンドのスケール/オフセット メタデータを適用して、スケーリングされた値を非スケーリング値に変換します。"
+"出力データ型を :option:-ot スイッチでリセットすることもよく必要です。非スケーリング値は、次の式でスケーリングされた生値から計算されます。"
 
 #: ../../source/programs/gdal_translate.rst:184
 msgid ""
@@ -288,6 +303,7 @@ msgid ""
 "Selects a subwindow from the source image for copying based on pixel/line"
 " location."
 msgstr ""
+"ピクセル/ラインの位置に基づいて、ソース画像からコピーするサブウィンドウを選択します。"
 
 #: ../../source/programs/gdal_translate.rst:193
 msgid ""
@@ -296,6 +312,8 @@ msgid ""
 "coordinates (by default expressed in the SRS of the dataset. Can be "
 "changed with :option:`-projwin_srs`)."
 msgstr ""
+"ソース画像からコピーするサブウィンドウを選択します（ :option:-srcwin のように）。"
+"ただし、コーナーは地理参照座標で指定されます（デフォルトではデータセットのSRSで表現されます。 :option:-projwin_srs で変更できます）。"
 
 #: ../../source/programs/gdal_translate.rst:200
 msgid ""
@@ -305,6 +323,8 @@ msgid ""
 " with GDAL 2.1.0, sub-pixel accuracy is however used to get better "
 "results."
 msgstr ""
+"GDAL 2.1.0および2.1.1では、ピクセルと一致しない座標で -projwin を使用すると、サブピクセルシフトが発生します。"
+"これは後のバージョンで修正されています。最近傍以外の再サンプリングを選択する場合、GDAL 2.1.0以降、サブピクセル精度が使用され、より良い結果が得られます。"
 
 #: ../../source/programs/gdal_translate.rst:208
 msgid ""
@@ -312,10 +332,14 @@ msgid ""
 ":option:`-projwin`. The <srs_def> may be any of the usual GDAL/OGR forms,"
 " complete WKT, PROJ.4, EPSG:n or a file containing the WKT."
 msgstr ""
+" :option:-projwin で指定された座標を解釈するためのSRSを指定します。"
+" <srs_def> は、通常のGDAL/OGR形式のいずれか、完全なWKT、PROJ.4、EPSG、またはWKTを含むファイルのいずれかである可能性があります。"
 
 #: ../../source/programs/gdal_translate.rst:213
 msgid "This does not cause reprojection of the dataset to the specified SRS."
 msgstr ""
+"これはデータセットを指定されたSRSに再投影することはありません。"
+
 
 #: ../../source/programs/gdal_translate.rst:217
 msgid ""
@@ -324,6 +348,8 @@ msgid ""
 "raster extent will be considered as an error. The default behavior is to "
 "accept such requests, when they were considered as an error before."
 msgstr ""
+"（部分的に外れている場合のエラー）このオプションが設定されている場合、 :option:-srcwin または :option:-projwin の値がソースラスター範囲の一部外にある場合はエラーと見なされます。"
+"デフォルトの動作は、そのような要求を受け入れることであり、以前はエラーと見なされていました。"
 
 #: ../../source/programs/gdal_translate.rst:224
 msgid ""
@@ -331,6 +357,7 @@ msgid ""
 "criterion for erroring out is when the request falls completely outside "
 "the source raster extent."
 msgstr ""
+"（完全に外れている場合のエラー） :option:-epo と同じですが、エラーになる基準は、要求がソースラスター範囲の完全に外にある場合です。"
 
 #: ../../source/programs/gdal_translate.rst:230
 msgid ""
@@ -338,6 +365,7 @@ msgid ""
 ":option:`-a_ullr` or :option:`-a_gt` to specify the extent in this "
 "projection."
 msgstr ""
+"出力ファイルの投影をオーバーライドします。 :option:-a_ullr または :option:-a_gt と一緒に使用して、この投影の範囲を指定できます。"
 
 #: ../../source/programs/options/srs_def.rst:1
 msgid ""
@@ -347,16 +375,19 @@ msgid ""
 "EPSG:4296), a well known text (WKT) CRS definition, PROJ.4 declarations, "
 "or the name of a .prj file containing a WKT CRS definition."
 msgstr ""
+"渡すことができる座標参照系は、 :cpp:func:OGRSpatialReference::SetFromUserInput 呼び出しによってサポートされるものであれば何でもかまいません。"
+"これには、EPSG Projected、GeographicまたはCompound CRS（例：EPSG:4296）、よく知られているテキスト（WKT）CRS定義、PROJ.4宣言、またはWKT CRS定義を含む.prjファイルの名前が含まれます。"
 
 #: ../../source/programs/gdal_translate.rst:235
 msgid "No reprojection is done."
-msgstr ""
+msgstr "再投影は行われません。"
 
 #: ../../source/programs/gdal_translate.rst:241
 msgid ""
 "Assign a coordinate epoch, linked with the output SRS. Useful when the "
 "output SRS is a dynamic CRS."
 msgstr ""
+"出力SRSにリンクされた座標エポックを割り当てます。出力SRSが動的CRSである場合に役立ちます。"
 
 #: ../../source/programs/gdal_translate.rst:246
 msgid ""
@@ -367,6 +398,9 @@ msgid ""
 "the 2 steps: ``gdal_translate input.tif tmp.vrt -a_scale scale -a_offset "
 "offset`` followed by ``gdal_translate tmp.vrt output.tif -unscale``"
 msgstr ""
+"バンドスケーリング値を設定します。ピクセル値の変更は行われません。 :option:-unscale は :option:-a_scale を考慮しないことに注意してください。"
+"例えば、-scale 0 1 <offset> <offset+scale> を指定して（オフセット、スケール）のタプルを適用し、次の2ステップに相当します： "
+"gdal_translate input.tif tmp.vrt -a_scale scale -a_offset offset の後に gdal_translate tmp.vrt output.tif -unscale を実行します。"
 
 #: ../../source/programs/gdal_translate.rst:257
 msgid ""
@@ -377,6 +411,9 @@ msgid ""
 "``gdal_translate input.tif tmp.vrt -a_scale scale -a_offset offset`` "
 "followed by ``gdal_translate tmp.vrt output.tif -unscale``"
 msgstr ""
+"バンドオフセット値を設定します。ピクセル値の変更は行われません。 :option:-unscale は :option:-a_offset を考慮しないことに注意してください。"
+"例えば、-scale 0 1 <offset> <offset+scale> を指定して（オフセット、スケール）のタプルを適用し、次の2ステップに相当します： "
+"gdal_translate input.tif tmp.vrt -a_scale scale -a_offset offset の後に gdal_translate tmp.vrt output.tif -unscale を実行します。"
 
 #: ../../source/programs/gdal_translate.rst:268
 msgid ""

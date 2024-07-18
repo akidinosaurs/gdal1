@@ -21,36 +21,37 @@ msgstr ""
 
 #: ../../source/programs/gdal_translate.rst:5
 msgid "gdal_translate"
-msgstr ""
+msgstr "gdalの翻訳"
 
 #: ../../source/programs/gdal_translate.rst:9
 msgid "Converts raster data between different formats."
-msgstr ""
+msgstr "ラスター データを異なる形式間で変換します"
 
 #: ../../source/programs/gdal_translate.rst:14
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../source/programs/gdal_translate.rst:43
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/programs/gdal_translate.rst:45
 msgid ""
 "The :program:`gdal_translate` utility can be used to convert raster data "
 "between different formats, potentially performing some operations like "
 "subsettings, resampling, and rescaling pixels in the process."
-msgstr ""
+msgstr "ユーティリティを使用して、ラスター データを異なる形式間で変換できます。"
+"この過程でサブセット化、再サンプリング、およびピクセルのリスケールなどの操作を行うことができます。"
 
 #: ../../source/programs/options/help.rst:3
 msgid "Show this help message and exit"
-msgstr ""
+msgstr "このヘルプ メッセージを表示して終了します"
 
 #: ../../source/programs/options/help_general.rst:3
 msgid ""
 "Gives a brief usage message for the generic GDAL commandline options and "
 "exit."
-msgstr ""
+msgstr "一般的なGDALコマンドラインオプションの簡単な使用メッセージを表示して終了します。"
 
 #: ../../source/programs/options/ot.rst:3
 msgid ""
@@ -59,13 +60,13 @@ msgid ""
 "``UInt16``, ``Int16``, ``UInt32``, ``Int32``, ``UInt64``, ``Int64``, "
 "``Float32``, ``Float64``, ``CInt16``, ``CInt32``, ``CFloat32`` or "
 "``CFloat64``."
-msgstr ""
+msgstr "出力画像バンドをドライバーでサポートされている特定のデータ型に強制します。次のいずれかになる場合があります。"
 
 #: ../../source/programs/gdal_translate.rst:57
 msgid ""
 "Don't be forgiving of mismatches and lost data when translating to the "
 "output format."
-msgstr ""
+msgstr "出力形式に変換する際に、不一致やデータの損失がある場合には許可されません。"
 
 #: ../../source/programs/options/if.rst:3
 msgid ""
@@ -76,7 +77,9 @@ msgid ""
 "candidate drivers. Note that it does not force those drivers to open the "
 "dataset. In particular, some drivers have requirements on file "
 "extensions."
-msgstr ""
+msgstr "入力ファイルを開くために試みるフォーマット/ドライバー名。通常は指定する必要はありませんが、適切なドライバーを選択できない場合に、"
+"自動ドライバー検出をスキップするために使用できます。このオプションは複数回繰り返して、いくつかの候補ドライバーを指定することができます。"
+"これらのドライバーがデータセットを開くことを強制するものではないことに注意してください。特に、いくつかのドライバーにはファイル拡張子に関する要件があります。"
 
 #: ../../source/programs/options/of.rst:3
 msgid ""
@@ -84,6 +87,7 @@ msgid ""
 "format is guessed from the extension (previously was GTiff). Use the "
 "short format name."
 msgstr ""
+"出力形式を選択します。GDAL 2.3以降、指定されていない場合、形式は拡張子から推測されます（以前はGTiffでした）。"
 
 #: ../../source/programs/gdal_translate.rst:66
 msgid ""
@@ -93,6 +97,9 @@ msgid ""
 "set to \"mask,1\" (or just \"mask\") to mean the mask band of the first "
 "band of the input dataset."
 msgstr ""
+"出力用の入力バンド band を選択します。バンドは1から番号付けされます。"
+"複数の :option:-b スイッチを使用して、出力ファイルに書き込む入力バンドのセットを選択するか、バンドを並べ替えることができます。"
+" band は、入力データセットの最初のバンドのマスクバンドを意味するように「mask,1」（または単に「mask」）に設定することもできます。"
 
 #: ../../source/programs/gdal_translate.rst:74
 msgid ""
@@ -104,6 +111,10 @@ msgid ""
 " **band** can also be set to \"mask,1\" (or just \"mask\") to mean the "
 "mask band of the 1st band of the input dataset."
 msgstr ""
+"出力データセットのマスクバンドを作成するために、入力バンド band を選択します。バンドは1から番号が振られます。"
+" band は、入力データセットのグローバルマスクが存在する場合、そのコピーを避けるために「none」に設定できます。"
+"そうでない場合、デフォルトでコピーされます（「auto」）、マスクがアルファチャネルでない限り、または明らかに出力データセットの通常のバンドとして使用される場合は（「-b mask」になります）。"
+" band は、入力データセットの1番目のバンドのマスクバンドを意味するように「mask,1」（または単に「mask」）に設定することもできます。"
 
 #: ../../source/programs/gdal_translate.rst:84
 msgid ""
@@ -113,6 +124,9 @@ msgid ""
 "'gray' value enables to expand a dataset with a color table that only "
 "contains gray levels to a gray indexed dataset."
 msgstr ""
+"1つのバンドにカラーテーブルがあるデータセットを、3（RGB）または4（RGBA）のバンドを持つデータセットとして公開します。"
+"カラーテーブルをサポートしないJPEG、JPEG2000、MrSID、ECWなどの出力ドライバーに役立ちます。"
+"'gray' 値を使用すると、灰色レベルのみを含むカラーテーブルを持つデータセットを灰色インデックス付きデータセットに拡張できます。"
 
 #: ../../source/programs/gdal_translate.rst:92
 msgid ""
@@ -122,6 +136,8 @@ msgid ""
 "from the other one, while maintaining the aspect ratio of the source "
 "dataset."
 msgstr ""
+"出力ファイルのサイズを設定します。アウトサイズはピクセルとラインで指定されますが、'%'が付いている場合は入力画像サイズの割合になります。"
+"2つの値のうち1つが0に設定されている場合、その値はもう他方の値から決定され、ソースデータセットのアスペクト比が維持されます。"
 
 #: ../../source/programs/gdal_translate.rst:99
 msgid ""
@@ -129,6 +145,8 @@ msgid ""
 "units. Both must be positive values. This is mutually exclusive with "
 ":option:`-outsize`, :option:`-a_ullr`, and :option:`-a_gt`."
 msgstr ""
+"ターゲット解像度を設定します。値は地理参照単位で表現される必要があります。両方とも正の値でなければなりません。"
+"これは、 :option:-outsize、 :option:-a_ullr、および :option:-a_gt と相互に排他なので、両立はできないです。。"
 
 #: ../../source/programs/gdal_translate.rst:107
 msgid ""
@@ -142,6 +160,11 @@ msgid ""
 "resampling method, and a higher quality resampling method is specified "
 "with :option:`-r`."
 msgstr ""
+"ソースファイルのどの概要レベルを使用するかを指定します。デフォルトの選択はAUTOで、ターゲット解像度に最も近い解像度の概要レベルが選択されます。"
+"特定のレベルを選択するには整数値（0ベース、すなわち0=1番目の概要レベル）を指定します。"
+" AUTO-n を指定すると、n は1以上の整数であり、AUTOの1つ下の概要レベルを選択します。"
+"または、NONEを指定してベース解像度を強制的に使用させます（低品質の再サンプリング方法で概要が生成された場合に役立ちます。"
+"この場合、より高品質の再サンプリング方法を :option:-r で指定します）。"
 
 #: ../../source/programs/gdal_translate.rst:116
 msgid ""
@@ -149,6 +172,8 @@ msgid ""
 ":option:`-outsize` and :option:`-tr` is specified, the size of the "
 "overview will be used as the output size."
 msgstr ""
+" :option:-ovr が整数値に指定されており、 :option:-outsize および :option:-tr のいずれも指定されていない場合、"
+"概要のサイズが出力サイズとして使用されます。"
 
 #: ../../source/programs/gdal_translate.rst:120
 msgid ""
@@ -158,16 +183,18 @@ msgid ""
 "percentage values, they refer to the size of the full resolution source "
 "dataset."
 msgstr ""
+" :option:-ovr が指定されている場合、 :option:-srcwin の値は、指定された場合、フル解像度ソースデータセットのピクセルオフセットおよびサイズとして表現される必要があります。"
+"同様に、パーセンテージ値を使用する場合、 :option:-outsize は、フル解像度ソースデータセットのサイズを指します。"
 
 #: ../../source/programs/gdal_translate.rst:127
 msgid "Select a resampling algorithm."
-msgstr ""
+msgstr "再サンプリング アルゴリズムを選択します。"
 
 #: ../../source/programs/gdal_translate.rst:129
 msgid ""
 "``nearest`` (default) applies a nearest neighbour (simple sampling) "
 "resampler"
-msgstr ""
+msgstr "デフォルト）は、最近傍（単純サンプリング）リサンプラーを適用します"
 
 #: ../../source/programs/gdal_translate.rst:131
 msgid ""
@@ -176,34 +203,37 @@ msgid ""
 "properly the weight of source pixels not contributing fully to the target"
 " pixel."
 msgstr ""
+"average は、すべての非NODATA寄与ピクセルの平均を計算します。"
+"GDAL 3.1以降、これは、ターゲットピクセルに完全に寄与しないソースピクセルの重みを適切に考慮した加重平均です。"
 
 #: ../../source/programs/gdal_translate.rst:133
 msgid ""
 "``rms`` computes the root mean squared / quadratic mean of all non-NODATA"
 " contributing pixels (GDAL >= 3.3)"
 msgstr ""
+"rms は、すべての非NODATA寄与ピクセルの二乗平均平方根/二乗平均を計算します（GDAL >= 3.3）"
 
 #: ../../source/programs/gdal_translate.rst:135
 msgid "``bilinear`` applies a bilinear convolution kernel."
-msgstr ""
+msgstr  "bilinear は、バイリニア畳み込みカーネルを適用します。"
 
 #: ../../source/programs/gdal_translate.rst:137
 msgid "``cubic`` applies a cubic convolution kernel."
-msgstr ""
+msgstr "cubic は、三次畳み込みカーネルを適用します。"
 
 #: ../../source/programs/gdal_translate.rst:139
 msgid "``cubicspline`` applies a B-Spline convolution kernel."
-msgstr ""
+msgstr "cubicspline は、Bスプライン畳み込みカーネルを適用します。"
 
 #: ../../source/programs/gdal_translate.rst:141
 msgid "``lanczos`` applies a Lanczos windowed sinc convolution kernel."
-msgstr ""
+msgstr "lanczos は、ランツォスウィンドウシンク畳み込みカーネルを適用します。"
 
 #: ../../source/programs/gdal_translate.rst:143
 msgid ""
 "``mode`` selects the value which appears most often of all the sampled "
 "points."
-msgstr ""
+msgstr "mode は、サンプリングされたすべてのポイントの中で最も頻繁に現れる値を選択します。"
 
 #: ../../source/programs/gdal_translate.rst:147
 msgid ""
